@@ -5,19 +5,22 @@
       "id": "sara",
       "nome": "Sara",
       "squadra": "Pol. Mandello · Serie D",
-      "file": "data/sara.json"
+      "file": "data/sara.json",
+      "sport": "volley"
     },
     {
       "id": "thomas",
       "nome": "Thomas",
       "squadra": "DC Mandello · DR3 basket",
-      "file": "data/thomas.json"
+      "file": "data/thomas.json",
+      "sport": "basket"
     },
     {
       "id": "alessia",
       "nome": "Alessia",
       "squadra": "Mandello · Serie B2",
-      "file": "data/alessia.json"
+      "file": "data/alessia.json",
+      "sport": "volley"
     }
   ]
 }

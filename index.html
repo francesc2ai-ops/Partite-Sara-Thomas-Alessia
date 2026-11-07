@@ -5,39 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Partite Sara Thomas Alessia</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="theme-color" content="#16202e">
+<meta name="theme-color" content="#1c2d5e">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: una scheda per settimana con una riga per ciascun fratello; questo weekend e il prossimo aperti, gli altri richiudibili */
 :root {
-  --bg: #eef2f6;
-  --surface: #ffffff;
-  --ink: #16202e;
-  --muted: #5b6676;
-  --line: #d9e0e8;
-  --p0: #1565b0; --p0-soft: #e2eef9;   /* Sara */
-  --p1: #c2500c; --p1-soft: #fbeadf;   /* Thomas */
-  --p2: #9b2c78; --p2-soft: #f6e4f0;   /* Alessia */
-  --now: #16202e;
-  --now-ink: #ffffff;
+  --bg: #f4eddc;             /* crema Mandello */
+  --surface: #fffaf0;
+  --ink: #17244a;            /* blu notte Mandello */
+  --muted: #5f6680;
+  --line: #e4d9be;
+  --navy: #1c2d5e;
+  --orange: #ee8b3a;         /* arancio pallone */
+  --p0: #6d3fc0; --p0-soft: #efe8fb;   /* Sara: viola */
+  --p1: #1c2d5e; --p1-soft: #e3e8f4;   /* Thomas: blu Mandello */
+  --p2: #c0267a; --p2-soft: #fbe6f1;   /* Alessia: fucsia */
+  --home: #15803d; --home-ink: #ffffff; --home-tint: #eaf6ee;
+  --away: #ee8b3a; --away-ink: #1c2d5e; --away-tint: #fdf0e3;
+  --now: #1c2d5e; --now-ink: #fbf3e1;
   --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d131d; --surface: #161f2d; --ink: #eef2f6; --muted: #9eaabb; --line: #283447;
-    --p0: #5aa6ee; --p0-soft: #142a40; --p1: #f2894f; --p1-soft: #3a1f10; --p2: #e070bc; --p2-soft: #36172d;
-    --now: #eef2f6; --now-ink: #0d131d;
+    --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
+    --p0: #b394f0; --p0-soft: #2a2145; --p1: #9fb6f5; --p1-soft: #1d2a4d; --p2: #f27ab9; --p2-soft: #3b1a2e;
+    --home: #22a457; --home-ink: #ffffff; --home-tint: #13291f; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
+    --now: #22386f; --now-ink: #fbf3e1;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0d131d; --surface: #161f2d; --ink: #eef2f6; --muted: #9eaabb; --line: #283447;
-  --p0: #5aa6ee; --p0-soft: #142a40; --p1: #f2894f; --p1-soft: #3a1f10; --p2: #e070bc; --p2-soft: #36172d;
-  --now: #eef2f6; --now-ink: #0d131d;
+  --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
+  --p0: #b394f0; --p0-soft: #2a2145; --p1: #9fb6f5; --p1-soft: #1d2a4d; --p2: #f27ab9; --p2-soft: #3b1a2e;
+  --home: #22a457; --home-ink: #ffffff; --home-tint: #13291f; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
+  --now: #22386f; --now-ink: #fbf3e1;
   color-scheme: dark;
 }
 .c0 { --c: var(--p0); --cs: var(--p0-soft); }
@@ -55,20 +62,32 @@ main { max-width: 520px; margin: 0 auto; display: grid; gap: 18px; }
 h1 { font: 800 2rem/1.05 var(--f-display); text-transform: uppercase; letter-spacing: .02em; margin: 0; text-wrap: balance; }
 h1 span { color: var(--c); }
 .sub { color: var(--muted); font-size: .95rem; margin-top: 4px; }
+.club { display: flex; align-items: center; gap: 12px; }
+.club img { width: 54px; height: 54px; border-radius: 50%; flex: none; box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--orange); }
+.legend { display: flex; gap: 8px; flex-wrap: wrap; }
 #weeks { display: grid; gap: 18px; }
 
 .week { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
 .week-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; padding: 12px 16px; border-bottom: 1px solid var(--line); }
 .week-h b { font: 800 1.35rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
 .week-h span { color: var(--muted); font-size: .9rem; }
-.week.now .week-h { background: var(--now); color: var(--now-ink); border-color: var(--now); }
+.week.now { border-color: var(--now); }
+.week.now .week-h { background: var(--now); color: var(--now-ink); border-color: var(--orange); border-bottom-width: 4px; }
 .week.now .week-h span { color: var(--now-ink); opacity: .75; }
 
 .who { display: grid; grid-template-columns: 6px 1fr; }
 .who + .who { border-top: 1px solid var(--line); }
 .who > span { background: var(--c); }
 .who-b { padding: 14px 16px; display: grid; gap: 6px; min-width: 0; }
-.name { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.who.h .who-b { background: var(--home-tint); }
+.who.a .who-b { background: var(--away-tint); }
+.ball { width: 22px; height: 22px; flex: none; color: var(--c); display: inline-flex; align-self: center; }
+.ball svg { width: 100%; height: 100%; }
+.where { justify-self: start; display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 9px; border-radius: 9px; font: 800 1.1rem/1 var(--f-display); letter-spacing: .06em; text-transform: uppercase; }
+.where svg { width: 17px; height: 17px; }
+.where.h { background: var(--home); color: var(--home-ink); }
+.where.a { background: var(--away); color: var(--away-ink); }
+.name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .name b { font: 800 1.5rem/1 var(--f-display); text-transform: uppercase; color: var(--c); }
 .name small { color: var(--muted); font-size: .85rem; }
 .when { font-weight: 700; font-size: 1.15rem; }
@@ -91,6 +110,8 @@ details.week .sx { display: grid; gap: 4px; min-width: 0; }
 details.week .sx > b { font: 800 1.15rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; color: var(--ink); }
 .minis { display: flex; gap: 4px 14px; flex-wrap: wrap; font-size: .9rem; color: var(--ink); }
 .mini b { font-weight: 700; color: var(--c); }
+.mini i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
+.mini i.h { background: var(--home); } .mini i.a { background: var(--away); }
 .mini.off { color: var(--muted); }
 .chev { width: 22px; height: 22px; flex: none; color: var(--muted); transition: transform .2s; display: inline-flex; }
 .chev svg { width: 100%; height: 100%; }
@@ -105,11 +126,11 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
 <body>
 <main>
   <header>
-    <h1 id="titolo">Sara, Thomas &amp; Alessia</h1>
-    <div class="sub">Dove giocano ogni settimana</div>
+    <div class="club"><img src="assets/logo.png" alt="Logo Pol. Mandello" width="54" height="54"><div><h1 id="titolo">Sara, Thomas &amp; Alessia</h1>
+    <div class="sub">Dove giocano ogni settimana · Mandello</div></div></div>
   </header>
   <div id="weeks"><div class="empty">Carico le partite…</div></div>
-  <footer>Pallavolo: calendari FIPAV · Basket: calendario DR3</footer>
+  <footer><span class="legend" style="justify-content:center;margin-bottom:6px"><span class="where h" style="font-size:.85rem">In casa</span><span class="where a" style="font-size:.85rem">Trasferta</span></span>Pallavolo: calendari FIPAV · Basket: calendario DR3</footer>
 </main>
 
 <!-- Per l'anteprima i dati possono essere incorporati qui; sul sito vengono letti dai file in data/ -->
@@ -128,6 +149,8 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
   const icoPin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>';
   const icoHome = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>';
   const icoPlane = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 15.5v-2l-8-5V3.8a1.5 1.5 0 0 0-3 0v4.7l-8 5v2l8-2.5v5l-2 1.5V21l3.5-1 3.5 1v-1.5l-2-1.5v-5z"/></svg>';
+  const icoVolley = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 2.8c-1.6 3.4-1.4 6.6.2 9.2"/><path d="M12.2 12c3.2.3 6.2-.9 8.6-3.6"/><path d="M12.2 12c-1.7 2.8-4.6 4.4-8.4 4.6"/><path d="M7 4.4c3 .6 6.7 3.4 8.3 7.2 1 2.5 1 5.4.1 8.6"/></svg>';
+  const icoBasket = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 2.8v18.4M2.8 12h18.4"/><path d="M5.5 5.5c2.2 1.8 3.4 4 3.4 6.5s-1.2 4.7-3.4 6.5"/><path d="M18.5 5.5c-2.2 1.8-3.4 4-3.4 6.5s1.2 4.7 3.4 6.5"/></svg>';
   const icoChev = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 
   const norm = j => (j.partite || []).map(p => ({
@@ -144,17 +167,20 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
       body = '<div class="' + (giocata ? 'played' : '') + '" style="display:grid;gap:6px">' +
         '<div class="when">' + GIORNI[p.d.getDay()] + ' ' + p.d.getDate() + ' ' + MESI[p.d.getMonth()] + '<span class="t">' + (p.oraDubbia ? 'orario da confermare' : 'ore ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) + '</span>' + (giocata ? ' · giocata' : '') + '</div>' +
         '<div class="place"><b>' + esc(p.campo) + '</b>' + (p.ind ? '<br>' + esc(p.ind) : '') + '</div>' +
-        '<div class="vs"><span class="tag">' + (p.casa ? icoHome + "Casa" : icoPlane + "Trasferta") + '</span>contro ' + esc(p.avv) + '</div>' +
+        '<div class="where ' + (p.casa ? 'h' : 'a') + '">' + (p.casa ? icoHome + "In casa" : icoPlane + "Trasferta") + '</div>' +
+        '<div class="vs">contro ' + esc(p.avv) + '</div>' +
         (p.q ? '<a class="maps" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.q) + '" target="_blank" rel="noopener">' + icoPin + 'Google Maps</a>' : '') +
         '</div>';
     }
-    return '<div class="who c' + i + '"><span></span><div class="who-b"><div class="name"><b>' + esc(per.nome) + '</b><small>' + esc(per.squadra) + '</small></div>' + body + '</div></div>';
+    const hw = p && !p.riposo ? (p.casa ? ' h' : ' a') : '';
+    const ball = '<i class="ball" title="' + (per.sport === 'basket' ? 'Basket' : 'Pallavolo') + '">' + (per.sport === 'basket' ? icoBasket : icoVolley) + '</i>';
+    return '<div class="who c' + i + hw + '"><span></span><div class="who-b"><div class="name">' + ball + '<b>' + esc(per.nome) + '</b><small>' + esc(per.squadra) + '</small></div>' + body + '</div></div>';
   }
 
   function breve(per, i, lista) {
     const p = lista.find(x => !x.riposo);
     const txt = p ? GIORNI[p.d.getDay()].slice(0, 3) + ' ' + p.d.getDate() + (p.oraDubbia ? '' : ' · ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) : 'nessuna partita';
-    return '<span class="mini c' + i + (p ? '' : ' off') + '"><b>' + esc(per.nome) + '</b> ' + txt + '</span>';
+    return '<span class="mini c' + i + (p ? '' : ' off') + '">' + (p ? '<i class="' + (p.casa ? 'h' : 'a') + '" title="' + (p.casa ? 'In casa' : 'Trasferta') + '"></i>' : '') + '<b>' + esc(per.nome) + '</b> ' + txt + '</span>';
   }
 
   function render(persone) {
@@ -204,7 +230,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
         conf = await fetch("data/persone.json", { cache: "no-store" }).then(r => r.json());
         dati = await Promise.all(conf.persone.map(p => fetch(p.file + "?t=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => ({ partite: [] }))));
       }
-      const persone = conf.persone.map((p, i) => ({ nome: p.nome, squadra: p.squadra, lista: norm(dati[i]) }));
+      const persone = conf.persone.map((p, i) => ({ nome: p.nome, squadra: p.squadra, sport: p.sport, lista: norm(dati[i]) }));
       const nomi = persone.map((p, i) => '<span class="c' + i + '">' + esc(p.nome) + '</span>');
       document.getElementById("titolo").innerHTML = nomi.slice(0, -1).join(", ") + " &amp; " + nomi[nomi.length - 1];
       render(persone);
