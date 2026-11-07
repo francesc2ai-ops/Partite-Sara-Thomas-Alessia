@@ -1,0 +1,187 @@
+{
+  "_nota": "Serie D femminile girone C, Polisportiva Mandello. Fonte: calendario della società (PDF); nomi palestre dal calendario FIPAV.",
+  "partite": [
+    {
+      "inizio": "2026-10-17T21:00",
+      "casa": true,
+      "avversario": "GBG Clima Volley Colico (PG)",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-10-24T17:00",
+      "casa": false,
+      "avversario": "Gelateria Nonna Papera - G.S. Rastà DF",
+      "campo": "Palestra Scuola Media",
+      "indirizzo": "Via Giovio, Alzate Brianza"
+    },
+    {
+      "inizio": "2026-10-31T21:00",
+      "casa": true,
+      "avversario": "Vimedica Polisportiva Carugate",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-07T21:00",
+      "casa": false,
+      "avversario": "G.S. Cagliero DF",
+      "campo": "Palestra Centro Artigianelli - Palapavoni",
+      "indirizzo": "Via Crespi 30, Milano"
+    },
+    {
+      "inizio": "2026-11-14T21:00",
+      "casa": true,
+      "avversario": "Pallavolo Olgiate 1996 DF",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-21T20:00",
+      "casa": false,
+      "avversario": "Zurich Volley Longone 1987",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Bressanella, Longone al Segrino"
+    },
+    {
+      "inizio": "2026-11-28T21:00",
+      "casa": true,
+      "avversario": "AC Pagnano Volley",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-12-05T21:00",
+      "casa": true,
+      "avversario": "PVV-VAVV",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-12-12T20:30",
+      "casa": false,
+      "avversario": "Pallavolo Altavalle Grafiche Pradella",
+      "campo": "Palazzetto dello Sport Polifunzionale",
+      "indirizzo": "Via Verdi, Sondalo"
+    },
+    {
+      "inizio": "2026-12-19T21:00",
+      "casa": true,
+      "avversario": "V36 - VAVV PG",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-01-09T21:00",
+      "casa": false,
+      "avversario": "DI.R.EL. Ardor Bollate",
+      "campo": "Palazzetto dello Sport",
+      "indirizzo": "Via Repubblica 6, Bollate"
+    },
+    {
+      "inizio": "2027-01-16T21:00",
+      "casa": true,
+      "avversario": "Pol. C.G. Valmadrera",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-01-23T21:00",
+      "casa": true,
+      "avversario": "Doppio Malto GSV",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-02-14T10:30",
+      "casa": false,
+      "avversario": "GBG Clima Volley Colico (PG)",
+      "campo": "ICS 'Galileo Galilei'",
+      "indirizzo": "Via al Bacco 54/56, Colico"
+    },
+    {
+      "inizio": "2027-02-20T21:00",
+      "casa": true,
+      "avversario": "Gelateria Nonna Papera - G.S. Rastà DF",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-02-27T21:15",
+      "casa": false,
+      "avversario": "Vimedica Polisportiva Carugate",
+      "campo": "Scuola Elementare Nuova",
+      "indirizzo": "Via del Ginestrino, Carugate"
+    },
+    {
+      "inizio": "2027-03-06T21:00",
+      "casa": true,
+      "avversario": "G.S. Cagliero DF",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-03-13T21:00",
+      "casa": false,
+      "avversario": "Pallavolo Olgiate 1996 DF",
+      "campo": "Centro Scolastico Sportivo",
+      "indirizzo": "Via Tarchini, Olgiate Comasco"
+    },
+    {
+      "inizio": "2027-03-20T21:00",
+      "casa": true,
+      "avversario": "Zurich Volley Longone 1987",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-03T17:00",
+      "casa": false,
+      "avversario": "AC Pagnano Volley",
+      "campo": "Palestra Scuole Elementari",
+      "indirizzo": "Via Cappelletta 25, Merate"
+    },
+    {
+      "inizio": "2027-04-10T20:45",
+      "casa": false,
+      "avversario": "PVV-VAVV",
+      "campo": "Palazzetto Maloggia",
+      "indirizzo": "Viale Maloggia, Chiavenna"
+    },
+    {
+      "inizio": "2027-04-17T21:00",
+      "casa": true,
+      "avversario": "Pallavolo Altavalle Grafiche Pradella",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-25T18:00",
+      "casa": false,
+      "avversario": "V36 - VAVV PG",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via degli Emigranti, Gordona"
+    },
+    {
+      "inizio": "2027-05-01T21:00",
+      "casa": true,
+      "avversario": "DI.R.EL. Ardor Bollate",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-05-08T21:00",
+      "casa": false,
+      "avversario": "Pol. C.G. Valmadrera",
+      "campo": "Palazzetto Pietro Scola",
+      "indirizzo": "Via Gaggio, Malgrate"
+    },
+    {
+      "inizio": "2027-05-15T21:00",
+      "casa": false,
+      "avversario": "Doppio Malto GSV",
+      "campo": "Palazzetto Comunale",
+      "indirizzo": "Via Tevere 44, Villa Guardia"
+    }
+  ]
+}

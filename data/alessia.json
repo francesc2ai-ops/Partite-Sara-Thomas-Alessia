@@ -1,0 +1,187 @@
+{
+  "_nota": "Serie B2 femminile girone C, Cartiera dell'Adda (Mandello). Fonte: calendario FIPAV in Excel.",
+  "partite": [
+    {
+      "inizio": "2026-10-17T17:30",
+      "casa": true,
+      "avversario": "DUEC - Branchi e Benedetti CR",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-10-24T20:30",
+      "casa": false,
+      "avversario": "Real Volley BS",
+      "campo": "Palestra Oratorio Ponte S.Marco",
+      "indirizzo": "Via Rovetta, Calcinato"
+    },
+    {
+      "inizio": "2026-10-31T17:30",
+      "casa": true,
+      "avversario": "Electro Adda Olginate LC",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-07T19:00",
+      "casa": false,
+      "avversario": "Volley Barzanò LC",
+      "campo": "Palazzetto Polifunzionale Centro Sportivo Paolo VI",
+      "indirizzo": "Via Papa Giovanni XXIII, 24, Barzanò"
+    },
+    {
+      "inizio": "2026-11-14T17:30",
+      "casa": true,
+      "avversario": "Brescia Volley BS",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-21T17:00",
+      "casa": false,
+      "avversario": "Choruslife Volley Bergamo BG",
+      "campo": "Palestra Scuole Medie Corridoni",
+      "indirizzo": "Via Flores / Zona Celadina, Bergamo"
+    },
+    {
+      "inizio": "2026-11-28T17:30",
+      "casa": true,
+      "avversario": "TML - Recoaro Como CO",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-12-05T17:30",
+      "casa": true,
+      "avversario": "Valpala Brembana&Rolle BG",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-12-12T20:30",
+      "casa": false,
+      "avversario": "Siderurgica Leonessa Iseo V.BS",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Martiri della Liberta 3/A, Iseo"
+    },
+    {
+      "inizio": "2026-12-19T17:30",
+      "casa": true,
+      "avversario": "ASD Volley Lurano 95 BG",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-01-09T20:30",
+      "casa": false,
+      "avversario": "Promoball BS",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Gramsci 2, Maclodio"
+    },
+    {
+      "inizio": "2027-01-16T17:30",
+      "casa": true,
+      "avversario": "DAO Delta Torrefranca TN",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-01-23T18:00",
+      "casa": false,
+      "avversario": "Trentino Energie Arg. TN",
+      "campo": "Scuole Medie Argentario",
+      "indirizzo": "Via Ponte Alto, 1, Trento"
+    },
+    {
+      "inizio": "2027-02-13T21:00",
+      "casa": false,
+      "avversario": "DUEC - Branchi e Benedetti CR",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Manzoni, Credera Rubbiano"
+    },
+    {
+      "inizio": "2027-02-20T17:30",
+      "casa": true,
+      "avversario": "Real Volley BS",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-02-27T20:00",
+      "casa": false,
+      "avversario": "Electro Adda Olginate LC",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Campagnola, Olginate"
+    },
+    {
+      "inizio": "2027-03-06T17:30",
+      "casa": true,
+      "avversario": "Volley Barzanò LC",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-03-13T19:30",
+      "casa": false,
+      "avversario": "Brescia Volley BS",
+      "campo": "Polivalente Comunale di Folzano",
+      "indirizzo": "Via Baresani, Brescia"
+    },
+    {
+      "inizio": "2027-03-20T17:30",
+      "casa": true,
+      "avversario": "Choruslife Volley Bergamo BG",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-03T21:00",
+      "casa": false,
+      "avversario": "TML - Recoaro Como CO",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Giulini 20, Como"
+    },
+    {
+      "inizio": "2027-04-10T21:00",
+      "casa": false,
+      "avversario": "Valpala Brembana&Rolle BG",
+      "campo": "Palestra Consortile",
+      "indirizzo": "Passaggio G. Rodari, 3, Paladina"
+    },
+    {
+      "inizio": "2027-04-17T17:30",
+      "casa": true,
+      "avversario": "Siderurgica Leonessa Iseo V.BS",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-24T20:30",
+      "casa": false,
+      "avversario": "ASD Volley Lurano 95 BG",
+      "campo": "Palestra Comunale",
+      "indirizzo": "Via Manzoni, Lurano"
+    },
+    {
+      "inizio": "2027-05-01T17:30",
+      "casa": true,
+      "avversario": "Promoball BS",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-05-08T20:30",
+      "casa": false,
+      "avversario": "DAO Delta Torrefranca TN",
+      "campo": "Palestra Scuola Elementare Mattarello",
+      "indirizzo": "Via del Castel, 5, Mattarello"
+    },
+    {
+      "inizio": "2027-05-15T21:00",
+      "casa": true,
+      "avversario": "Trentino Energie Arg. TN",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "_nota": "Serie DR3 basket, DC Mandello. Fonte: calendario provvisorio (PDF).",
+  "partite": [
+    {
+      "inizio": "2026-10-02T21:15",
+      "casa": true,
+      "avversario": "L.B. Triuggio",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-10-09T21:30",
+      "casa": false,
+      "avversario": "Robbiate",
+      "campo": "Palestra",
+      "indirizzo": "Via Montello snc, Merate (LC)"
+    },
+    {
+      "inizio": "2026-10-16T21:15",
+      "casa": true,
+      "avversario": "Sovico",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-10-22T21:30",
+      "casa": false,
+      "avversario": "C. d. B. Lissone",
+      "campo": "Palestra",
+      "indirizzo": "Via Tarra snc, Lissone (MB)"
+    },
+    {
+      "inizio": "2026-10-30T21:15",
+      "casa": true,
+      "avversario": "Calolzio",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-06T21:30",
+      "casa": false,
+      "avversario": "Besanese",
+      "campo": "Palestra",
+      "indirizzo": "Via De Gasperi 89, Besana in Brianza (MB)"
+    },
+    {
+      "inizio": "2026-11-13T21:15",
+      "casa": true,
+      "avversario": "Rovagnate",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-11-22T18:00",
+      "casa": false,
+      "avversario": "Mapello",
+      "campo": "Pal. Dello sport del Lazzarino",
+      "indirizzo": "Mapello (BG)"
+    },
+    {
+      "inizio": "2026-11-27T21:30",
+      "casa": false,
+      "avversario": "Bolliti Almenno",
+      "campo": "Palestra",
+      "indirizzo": "Viale Papa Giovanni XXIII, Almenno san Salvatore (BG)"
+    },
+    {
+      "inizio": "2026-12-04T21:15",
+      "casa": true,
+      "avversario": "Biassono",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2026-12-08T20:45",
+      "casa": false,
+      "avversario": "Aurora S.F.",
+      "campo": "Palestra",
+      "indirizzo": "Via Gaggio 3/a, Malgrate (LC)"
+    },
+    {
+      "inizio": "2026-12-18T21:30",
+      "casa": false,
+      "avversario": "Due Vi Galbiate",
+      "campo": "Palestra",
+      "indirizzo": "villa Vergano (LC)"
+    },
+    {
+      "inizio": "2027-01-15T21:15",
+      "casa": true,
+      "avversario": "Pol. Monticellese",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-01-21T21:30",
+      "casa": false,
+      "avversario": "L.B. Triuggio",
+      "campo": "Scuole medie",
+      "indirizzo": "via Kennedy, Triuggio (MB)"
+    },
+    {
+      "inizio": "2027-01-29T21:15",
+      "casa": true,
+      "avversario": "Robbiate",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-02-04T21:30",
+      "casa": false,
+      "avversario": "Sovico",
+      "campo": "Palestra",
+      "indirizzo": "Via Baracca 15, Sovico (MB)"
+    },
+    {
+      "inizio": "2027-02-12T21:15",
+      "casa": true,
+      "avversario": "C. d. B. Lissone",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-02-19T21:30",
+      "casa": false,
+      "avversario": "Calolzio",
+      "campo": "Palestra",
+      "indirizzo": "via Lavello snc, Calolziocorte (LC)"
+    },
+    {
+      "inizio": "2027-02-26T21:15",
+      "casa": true,
+      "avversario": "Besanese",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-03-05T21:15",
+      "casa": false,
+      "avversario": "Rovagnate",
+      "campo": "Palestra",
+      "indirizzo": "Via Brianza 15, La Valletta (LC)"
+    },
+    {
+      "inizio": "2027-03-12T21:15",
+      "casa": true,
+      "avversario": "Mapello",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-03-19T21:15",
+      "casa": true,
+      "avversario": "Bolliti Almenno",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-01T21:30",
+      "casa": false,
+      "avversario": "Biassono",
+      "campo": "Palestra",
+      "indirizzo": "Via Parco ang. Via Brenno, Biassono (MB)"
+    },
+    {
+      "inizio": "2027-04-09T21:15",
+      "casa": true,
+      "avversario": "Aurora S.F.",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-16T21:15",
+      "casa": true,
+      "avversario": "Due Vi Galbiate",
+      "campo": "Palestra Polifunzionale Ing. Luigi Buzzi",
+      "indirizzo": "Via Pra Magno 8, Mandello del Lario (LC)"
+    },
+    {
+      "inizio": "2027-04-23T21:30",
+      "casa": false,
+      "avversario": "Pol. Monticellese",
+      "campo": "Palestra",
+      "indirizzo": "Via Diaz 2, ang. Via Provinciale, Monticello (LC)"
+    }
+  ]
+}
