@@ -21,10 +21,10 @@
   --line: #e4d9be;
   --navy: #1c2d5e;
   --orange: #ee8b3a;         /* arancio pallone */
-  --p0: #6d3fc0; --p0-soft: #efe8fb;   /* Sara: viola */
-  --p1: #1c2d5e; --p1-soft: #e3e8f4;   /* Thomas: blu Mandello */
-  --p2: #c0267a; --p2-soft: #fbe6f1;   /* Alessia: fucsia */
-  --home: #15803d; --home-ink: #ffffff; --home-tint: #eaf6ee;
+  --p0: #15803d; --p0-soft: #e3f4e8;   /* Sara: verde */
+  --p1: #c81e1e; --p1-soft: #fbe4e4;   /* Thomas: rosso */
+  --p2: #0284c7; --p2-soft: #e0f2fe;   /* Alessia: azzurro */
+  --home: #1c2d5e; --home-ink: #ffffff; --home-tint: #e8ecf5;   /* casa: blu Mandello */
   --away: #ee8b3a; --away-ink: #1c2d5e; --away-tint: #fdf0e3;
   --now: #1c2d5e; --now-ink: #fbf3e1;
   --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
@@ -34,16 +34,16 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
-    --p0: #b394f0; --p0-soft: #2a2145; --p1: #9fb6f5; --p1-soft: #1d2a4d; --p2: #f27ab9; --p2-soft: #3b1a2e;
-    --home: #22a457; --home-ink: #ffffff; --home-tint: #13291f; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
+    --p0: #4ade80; --p0-soft: #12301e; --p1: #f87171; --p1-soft: #3a1414; --p2: #38bdf8; --p2-soft: #0c2a3d;
+    --home: #9fb6f5; --home-ink: #0d1428; --home-tint: #18213d; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
     --now: #22386f; --now-ink: #fbf3e1;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
-  --p0: #b394f0; --p0-soft: #2a2145; --p1: #9fb6f5; --p1-soft: #1d2a4d; --p2: #f27ab9; --p2-soft: #3b1a2e;
-  --home: #22a457; --home-ink: #ffffff; --home-tint: #13291f; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
+  --p0: #4ade80; --p0-soft: #12301e; --p1: #f87171; --p1-soft: #3a1414; --p2: #38bdf8; --p2-soft: #0c2a3d;
+  --home: #9fb6f5; --home-ink: #0d1428; --home-tint: #18213d; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
   --now: #22386f; --now-ink: #fbf3e1;
   color-scheme: dark;
 }
@@ -89,6 +89,7 @@ h1 span { color: var(--c); }
 .where.a { background: var(--away); color: var(--away-ink); }
 .name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .name b { font: 800 1.5rem/1 var(--f-display); text-transform: uppercase; color: var(--c); }
+.who > span { width: 8px; }
 .name small { color: var(--muted); font-size: .85rem; }
 .when { font-weight: 700; font-size: 1.15rem; }
 .when .t { font: 800 1.35rem/1 var(--f-display); margin-left: 6px; font-variant-numeric: tabular-nums; white-space: nowrap; }
