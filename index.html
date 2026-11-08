@@ -111,9 +111,13 @@ details.week summary::-webkit-details-marker { display: none; }
 details.week[open] summary { border-bottom: 1px solid var(--line); }
 details.week .sx { display: grid; gap: 4px; min-width: 0; }
 details.week .sx > b { font: 800 1.15rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; color: var(--ink); }
-.minis { display: flex; gap: 4px 14px; flex-wrap: wrap; font-size: .9rem; color: var(--ink); }
+.minis { display: grid; gap: 5px; font-size: .9rem; color: var(--ink); margin-top: 2px; }
 .mini b { font-weight: 700; color: var(--c); }
-.mini { display: inline-flex; align-items: center; gap: 4px; }
+.mini { display: flex; align-items: center; gap: 4px 6px; flex-wrap: wrap; min-width: 0; }
+.mini > b { min-width: 4.4em; }
+.mw { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mv { min-width: 0; color: var(--muted); }
+.mv b { color: var(--ink); font-weight: 700; }
 .mini i { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 6px; margin-right: 2px; }
 .mini i svg { width: 13px; height: 13px; }
 .mini i.h { background: var(--home); color: var(--home-ink); } .mini i.a { background: var(--away); color: var(--away-ink); }
@@ -184,7 +188,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
 
   function breve(per, i, lista) {
     const p = lista.find(x => !x.riposo);
-    const txt = p ? GIORNI[p.d.getDay()].slice(0, 3) + ' ' + p.d.getDate() + (p.oraDubbia ? '' : ' · ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) : 'nessuna partita';
+    const txt = p ? '<span class="mw">' + GIORNI[p.d.getDay()].slice(0, 3) + ' ' + p.d.getDate() + (p.oraDubbia ? '' : ' · ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) + '</span><span class="mv">vs <b>' + esc(p.avv) + '</b></span>' : 'nessuna partita';
     return '<span class="mini c' + i + (p ? '' : ' off') + '">' + (p ? '<i class="' + (p.casa ? 'h' : 'a') + '" title="' + (p.casa ? 'In casa' : 'Trasferta') + '">' + (p.casa ? icoHome : icoPlane) + '</i>' : '') + '<b>' + esc(per.nome) + '</b> ' + txt + '</span>';
   }
 
