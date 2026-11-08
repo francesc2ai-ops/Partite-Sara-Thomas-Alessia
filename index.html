@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Partite Sara Thomas Alessia</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="theme-color" content="#1c2d5e">
+<meta name="theme-color" content="#cdd8f2">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,43 +13,46 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: una scheda per settimana con una riga per ciascun fratello; questo weekend e il prossimo aperti, gli altri richiudibili */
+/* Palette pastello: crema e blu Mandello, un pastello per fratello (Sara verde, Thomas rosso, Alessia azzurro) */
 :root {
-  --bg: #f4eddc;             /* crema Mandello */
-  --surface: #fffaf0;
-  --ink: #17244a;            /* blu notte Mandello */
-  --muted: #5f6680;
-  --line: #e4d9be;
+  --bg: #faf6ec;
+  --surface: #fffdf8;
+  --ink: #1f2a4d;
+  --muted: #6a7088;
+  --line: #ece3cf;
   --navy: #1c2d5e;
-  --orange: #ee8b3a;         /* arancio pallone */
-  --p0: #15803d; --p0-soft: #e3f4e8;   /* Sara: verde */
-  --p1: #c81e1e; --p1-soft: #fbe4e4;   /* Thomas: rosso */
-  --p2: #0284c7; --p2-soft: #e0f2fe;   /* Alessia: azzurro */
-  --home: #1c2d5e; --home-ink: #ffffff; --home-tint: #e8ecf5;   /* casa: blu Mandello */
-  --away: #ee8b3a; --away-ink: #1c2d5e; --away-tint: #fdf0e3;
-  --now: #1c2d5e; --now-ink: #fbf3e1;
+  --orange: #f6c08f;
+  --p0: #2f7a4b; --p0-pastel: #bfe6cc; --p0-soft: #eef8f1;   /* Sara */
+  --p1: #b23a3a; --p1-pastel: #f6c4c4; --p1-soft: #fdf0f0;   /* Thomas */
+  --p2: #2a7aa8; --p2-pastel: #bfe3f7; --p2-soft: #eef8fd;   /* Alessia */
+  --home: #cdd8f2; --home-ink: #1c2d5e; --home-tint: #f2f5fc;
+  --away: #fcd7b4; --away-ink: #7a3d0c; --away-tint: #fff6ec;
+  --now: #cdd8f2; --now-ink: #1c2d5e;
   --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
-    --p0: #4ade80; --p0-soft: #12301e; --p1: #f87171; --p1-soft: #3a1414; --p2: #38bdf8; --p2-soft: #0c2a3d;
-    --home: #9fb6f5; --home-ink: #0d1428; --home-tint: #18213d; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
-    --now: #22386f; --now-ink: #fbf3e1;
+    --bg: #12182a; --surface: #1a2238; --ink: #f1ecdf; --muted: #a9b0c4; --line: #2b3552; --navy: #2a3c72; --orange: #c98a55;
+    --p0: #9fdcb5; --p0-pastel: #2f5a41; --p0-soft: #1a2a24; --p1: #f3a9a9; --p1-pastel: #633233; --p1-soft: #2c1e25;
+    --p2: #a6d6f2; --p2-pastel: #2d5470; --p2-soft: #18293a;
+    --home: #36477a; --home-ink: #e3e9fb; --home-tint: #1c2540; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #2a2223;
+    --now: #2a3c72; --now-ink: #f1ecdf;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0d1428; --surface: #161f3b; --ink: #f4ecda; --muted: #a8afc4; --line: #29355a; --navy: #22386f; --orange: #f39a4f;
-  --p0: #4ade80; --p0-soft: #12301e; --p1: #f87171; --p1-soft: #3a1414; --p2: #38bdf8; --p2-soft: #0c2a3d;
-  --home: #9fb6f5; --home-ink: #0d1428; --home-tint: #18213d; --away: #f39a4f; --away-ink: #131d3d; --away-tint: #33230f;
-  --now: #22386f; --now-ink: #fbf3e1;
+  --bg: #12182a; --surface: #1a2238; --ink: #f1ecdf; --muted: #a9b0c4; --line: #2b3552; --navy: #2a3c72; --orange: #c98a55;
+  --p0: #9fdcb5; --p0-pastel: #2f5a41; --p0-soft: #1a2a24; --p1: #f3a9a9; --p1-pastel: #633233; --p1-soft: #2c1e25;
+  --p2: #a6d6f2; --p2-pastel: #2d5470; --p2-soft: #18293a;
+  --home: #36477a; --home-ink: #e3e9fb; --home-tint: #1c2540; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #2a2223;
+  --now: #2a3c72; --now-ink: #f1ecdf;
   color-scheme: dark;
 }
-.c0 { --c: var(--p0); --cs: var(--p0-soft); }
-.c1 { --c: var(--p1); --cs: var(--p1-soft); }
-.c2 { --c: var(--p2); --cs: var(--p2-soft); }
+.c0 { --c: var(--p0); --cp: var(--p0-pastel); --cs: var(--p0-soft); }
+.c1 { --c: var(--p1); --cp: var(--p1-pastel); --cs: var(--p1-soft); }
+.c2 { --c: var(--p2); --cp: var(--p2-pastel); --cs: var(--p2-soft); }
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
@@ -71,13 +74,14 @@ h1 span { color: var(--c); }
 .week-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; padding: 12px 16px; border-bottom: 1px solid var(--line); }
 .week-h b { font: 800 1.35rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
 .week-h span { color: var(--muted); font-size: .9rem; }
-.week.now { border-color: var(--now); }
+.week.now { border-color: var(--now); box-shadow: 0 2px 0 var(--orange); }
 .week.now .week-h { background: var(--now); color: var(--now-ink); border-color: var(--orange); border-bottom-width: 4px; }
+.week.now .week-h span { color: var(--now-ink); }
 .week.now .week-h span { color: var(--now-ink); opacity: .75; }
 
 .who { display: grid; grid-template-columns: 6px 1fr; }
 .who + .who { border-top: 1px solid var(--line); }
-.who > span { background: var(--c); }
+.who > span { background: var(--cp); }
 .who-b { padding: 14px 16px; display: grid; gap: 6px; min-width: 0; }
 .who.h .who-b { background: var(--home-tint); }
 .who.a .who-b { background: var(--away-tint); }
@@ -95,12 +99,12 @@ h1 span { color: var(--c); }
 .when .t { font: 800 1.35rem/1 var(--f-display); margin-left: 6px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .place { font-size: .98rem; }
 .place b { font-weight: 600; }
-.vs { display: grid; gap: 1px; padding: 8px 12px; border-radius: 10px; background: var(--surface); border-left: 4px solid var(--c); }
+.vs { display: grid; gap: 1px; padding: 8px 12px; border-radius: 10px; background: var(--surface); border-left: 4px solid var(--cp); }
 .vs span { color: var(--muted); font: 700 .72rem/1.2 var(--f-body); letter-spacing: .1em; text-transform: uppercase; }
 .vs b { font: 800 1.3rem/1.15 var(--f-display); text-transform: uppercase; letter-spacing: .02em; color: var(--ink); text-wrap: balance; }
 .tag { display: inline-flex; align-items: center; gap: 5px; font: 700 .72rem/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; padding: 4px 7px; border-radius: 6px; background: var(--cs); color: var(--c); }
 .tag svg { width: 13px; height: 13px; }
-.maps { justify-self: start; display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; padding: 10px 16px; border-radius: 12px; text-decoration: none; font: 700 1.05rem/1 var(--f-display); letter-spacing: .05em; text-transform: uppercase; color: #ffffff; background: var(--c); }
+.maps { justify-self: start; display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; padding: 10px 16px; border-radius: 12px; text-decoration: none; font: 700 1.05rem/1 var(--f-display); letter-spacing: .05em; text-transform: uppercase; color: var(--c); background: var(--cp); }
 .maps svg { width: 18px; height: 18px; }
 .none { font: 700 1.2rem/1.2 var(--f-display); text-transform: uppercase; color: var(--muted); letter-spacing: .04em; }
 .played { opacity: .55; }
