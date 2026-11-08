@@ -95,7 +95,9 @@ h1 span { color: var(--c); }
 .when .t { font: 800 1.35rem/1 var(--f-display); margin-left: 6px; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .place { font-size: .98rem; }
 .place b { font-weight: 600; }
-.vs { color: var(--muted); font-size: .9rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.vs { display: grid; gap: 1px; padding: 8px 12px; border-radius: 10px; background: var(--surface); border-left: 4px solid var(--c); }
+.vs span { color: var(--muted); font: 700 .72rem/1.2 var(--f-body); letter-spacing: .1em; text-transform: uppercase; }
+.vs b { font: 800 1.3rem/1.15 var(--f-display); text-transform: uppercase; letter-spacing: .02em; color: var(--ink); text-wrap: balance; }
 .tag { display: inline-flex; align-items: center; gap: 5px; font: 700 .72rem/1 var(--f-body); letter-spacing: .08em; text-transform: uppercase; padding: 4px 7px; border-radius: 6px; background: var(--cs); color: var(--c); }
 .tag svg { width: 13px; height: 13px; }
 .maps { justify-self: start; display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; padding: 10px 16px; border-radius: 12px; text-decoration: none; font: 700 1.05rem/1 var(--f-display); letter-spacing: .05em; text-transform: uppercase; color: #ffffff; background: var(--c); }
@@ -171,7 +173,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
         '<div class="when">' + GIORNI[p.d.getDay()] + ' ' + p.d.getDate() + ' ' + MESI[p.d.getMonth()] + '<span class="t">' + (p.oraDubbia ? 'orario da confermare' : 'ore ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) + '</span>' + (giocata ? ' · giocata' : '') + '</div>' +
         '<div class="place"><b>' + esc(p.campo) + '</b>' + (p.ind ? '<br>' + esc(p.ind) : '') + '</div>' +
         '<div class="where ' + (p.casa ? 'h' : 'a') + '">' + (p.casa ? icoHome + "In casa" : icoPlane + "Trasferta") + '</div>' +
-        '<div class="vs">contro ' + esc(p.avv) + '</div>' +
+        '<div class="vs"><span>contro</span><b>' + esc(p.avv) + '</b></div>' +
         (p.q ? '<a class="maps" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.q) + '" target="_blank" rel="noopener">' + icoPin + 'Google Maps</a>' : '') +
         '</div>';
     }
