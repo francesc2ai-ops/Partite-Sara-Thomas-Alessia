@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Partite Sara Thomas Alessia</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="theme-color" content="#cdd8f2">
+<meta name="theme-color" content="#f1e4c3">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +25,9 @@
   --p0: #2f7a4b; --p0-pastel: #bfe6cc; --p0-soft: #eef8f1;   /* Sara */
   --p1: #b23a3a; --p1-pastel: #f6c4c4; --p1-soft: #fdf0f0;   /* Thomas */
   --p2: #2a7aa8; --p2-pastel: #bfe3f7; --p2-soft: #eef8fd;   /* Alessia */
-  --home: #cdd8f2; --home-ink: #1c2d5e; --home-tint: #f2f5fc;
-  --away: #fcd7b4; --away-ink: #7a3d0c; --away-tint: #fff6ec;
-  --now: #cdd8f2; --now-ink: #1c2d5e;
+  --home: #fbeeb0; --home-ink: #6b5200; --home-tint: #fffdf8;
+  --away: #fcd7b4; --away-ink: #7a3d0c; --away-tint: #fffdf8;
+  --now: #f1e4c3; --now-ink: #1c2d5e;
   --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
@@ -37,8 +37,8 @@
     --bg: #12182a; --surface: #1a2238; --ink: #f1ecdf; --muted: #a9b0c4; --line: #2b3552; --navy: #2a3c72; --orange: #c98a55;
     --p0: #9fdcb5; --p0-pastel: #2f5a41; --p0-soft: #1a2a24; --p1: #f3a9a9; --p1-pastel: #633233; --p1-soft: #2c1e25;
     --p2: #a6d6f2; --p2-pastel: #2d5470; --p2-soft: #18293a;
-    --home: #36477a; --home-ink: #e3e9fb; --home-tint: #1c2540; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #2a2223;
-    --now: #2a3c72; --now-ink: #f1ecdf;
+    --home: #5c5220; --home-ink: #fbf0c2; --home-tint: #1a2238; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #1a2238;
+    --now: #3a3424; --now-ink: #f1ecdf;
     color-scheme: dark;
   }
 }
@@ -46,8 +46,8 @@
   --bg: #12182a; --surface: #1a2238; --ink: #f1ecdf; --muted: #a9b0c4; --line: #2b3552; --navy: #2a3c72; --orange: #c98a55;
   --p0: #9fdcb5; --p0-pastel: #2f5a41; --p0-soft: #1a2a24; --p1: #f3a9a9; --p1-pastel: #633233; --p1-soft: #2c1e25;
   --p2: #a6d6f2; --p2-pastel: #2d5470; --p2-soft: #18293a;
-  --home: #36477a; --home-ink: #e3e9fb; --home-tint: #1c2540; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #2a2223;
-  --now: #2a3c72; --now-ink: #f1ecdf;
+  --home: #5c5220; --home-ink: #fbf0c2; --home-tint: #1a2238; --away: #7a4d28; --away-ink: #ffe3c8; --away-tint: #1a2238;
+  --now: #3a3424; --now-ink: #f1ecdf;
   color-scheme: dark;
 }
 .c0 { --c: var(--p0); --cp: var(--p0-pastel); --cs: var(--p0-soft); }
@@ -125,7 +125,9 @@ details.week .sx > b { font: 800 1.15rem/1.1 var(--f-display); text-transform: u
 .mini > b { min-width: 4.4em; }
 .mw { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .mv { min-width: 0; color: var(--muted); }
-.mv b { color: var(--ink); font-weight: 700; }
+.week-h .mini b, .week-h .mv b { font: 700 .95rem/1.25 var(--f-body); text-transform: none; letter-spacing: 0; }
+.week-h .mini > b { font-weight: 800; }
+.mv b { color: var(--ink); }
 .mini i { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 6px; margin-right: 2px; }
 .mini i svg { width: 13px; height: 13px; }
 .mini i.h { background: var(--home); color: var(--home-ink); } .mini i.a { background: var(--away); color: var(--away-ink); }
@@ -210,7 +212,14 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
       if (!sett.has(k)) sett.set(k, { lun: l, per: persone.map(() => []) });
       sett.get(k).per[i].push(p);
     }));
-    const tutte = [...sett.values()].sort((a, b) => a.lun - b.lun);
+    const adesso = Date.now();
+    const tutte = [...sett.values()].sort((a, b) => a.lun - b.lun)
+      .filter(w => {
+        // la settimana resta in testa fino alla mezzanotte del giorno dopo l'ultima partita
+        const ultima = w.per.flat().reduce((m, p) => p.d > m ? p.d : m, new Date(0));
+        const fine = new Date(ultima.getFullYear(), ultima.getMonth(), ultima.getDate() + 1);
+        return fine.getTime() > adesso;
+      });
     const box = document.getElementById("weeks");
     if (!tutte.length) { box.innerHTML = '<div class="empty">Nessuna partita in programma.</div>'; return; }
     const aperti = new Set([...box.querySelectorAll("details[open]")].map(d => d.dataset.k));
@@ -219,7 +228,8 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
       const sab = new Date(w.lun); sab.setDate(sab.getDate() + 5);
       const dom = new Date(w.lun); dom.setDate(dom.getDate() + 6);
       const diff = Math.round((w.lun.getTime() - lunOggi) / (7 * 86400000));
-      const titolo = diff === 0 ? "Questa settimana" : diff === 1 ? "Settimana prossima" : "";
+      const corrente = w === tutte[0];
+      const titolo = diff <= 0 ? "Questa settimana" : diff === 1 ? "Settimana prossima" : "Prossime partite";
       const giorni = w.per.flat().map(p => p.d);
       const primo = giorni.reduce((m, d) => d < m ? d : m, giorni[0]);
       const ultimo = giorni.reduce((m, d) => d > m ? d : m, giorni[0]);
@@ -229,7 +239,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
         : ini.getMonth() === fin.getMonth() ? ini.getDate() + "–" + fin.getDate() + " " + MESI[fin.getMonth()]
         : ini.getDate() + " " + MESI[ini.getMonth()] + " – " + fin.getDate() + " " + MESI[fin.getMonth()];
       const righe = persone.map((per, i) => (w.per[i].length ? w.per[i] : [null]).map(p => riga(per, i, p)).join("")).join("");
-      if (diff <= 1) return '<section class="week' + (diff === 0 ? ' now' : '') + '"><div class="week-h"><b>' + titolo + '</b><span>' + date + '</span></div>' + righe + '</section>';
+      if (corrente) return '<section class="week now"><div class="week-h"><b>' + titolo + '</b><span>' + date + '</span></div>' + righe + '</section>';
       const k = chiave(w.lun);
       return '<details class="week" data-k="' + k + '"' + (aperti.has(k) ? ' open' : '') + '><summary class="week-h"><span class="sx"><b>' + date + '</b><span class="minis">' +
         persone.map((per, i) => breve(per, i, w.per[i])).join("") + '</span></span><i class="chev">' + icoChev + '</i></summary>' + righe + '</details>';
