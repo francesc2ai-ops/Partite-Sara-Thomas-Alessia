@@ -111,8 +111,10 @@ details.week .sx { display: grid; gap: 4px; min-width: 0; }
 details.week .sx > b { font: 800 1.15rem/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; color: var(--ink); }
 .minis { display: flex; gap: 4px 14px; flex-wrap: wrap; font-size: .9rem; color: var(--ink); }
 .mini b { font-weight: 700; color: var(--c); }
-.mini i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
-.mini i.h { background: var(--home); } .mini i.a { background: var(--away); }
+.mini { display: inline-flex; align-items: center; gap: 4px; }
+.mini i { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 6px; margin-right: 2px; }
+.mini i svg { width: 13px; height: 13px; }
+.mini i.h { background: var(--home); color: var(--home-ink); } .mini i.a { background: var(--away); color: var(--away-ink); }
 .mini.off { color: var(--muted); }
 .chev { width: 22px; height: 22px; flex: none; color: var(--muted); transition: transform .2s; display: inline-flex; }
 .chev svg { width: 100%; height: 100%; }
@@ -181,7 +183,7 @@ footer { color: var(--muted); font-size: .8rem; text-align: center; }
   function breve(per, i, lista) {
     const p = lista.find(x => !x.riposo);
     const txt = p ? GIORNI[p.d.getDay()].slice(0, 3) + ' ' + p.d.getDate() + (p.oraDubbia ? '' : ' · ' + pad(p.d.getHours()) + ':' + pad(p.d.getMinutes())) : 'nessuna partita';
-    return '<span class="mini c' + i + (p ? '' : ' off') + '">' + (p ? '<i class="' + (p.casa ? 'h' : 'a') + '" title="' + (p.casa ? 'In casa' : 'Trasferta') + '"></i>' : '') + '<b>' + esc(per.nome) + '</b> ' + txt + '</span>';
+    return '<span class="mini c' + i + (p ? '' : ' off') + '">' + (p ? '<i class="' + (p.casa ? 'h' : 'a') + '" title="' + (p.casa ? 'In casa' : 'Trasferta') + '">' + (p.casa ? icoHome : icoPlane) + '</i>' : '') + '<b>' + esc(per.nome) + '</b> ' + txt + '</span>';
   }
 
   function render(persone) {
